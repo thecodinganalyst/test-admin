@@ -13,6 +13,6 @@ import { PostList } from "./posts";
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
     <Resource name="posts" list={PostList} />
-    <Resource name="users" list={UserList} />
+    <Resource name="users" list={UserList} show={ShowGuesser} />
   </Admin>
 );
